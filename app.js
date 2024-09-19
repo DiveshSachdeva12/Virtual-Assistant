@@ -72,6 +72,10 @@ setTimeout(() => {
       speak("Playing Diljit Dosanjh song on YouTube");
       window.open("https://youtu.be/dCmp56tSSmA?si=gLnJzIzeENQvT291", "_blank");
     }
+    else if (command.includes("open snapchat")) {
+      speak("Opening snapchat");
+      window.open("https://www.snapchat.com", "_blank");
+    }
     else if (command.includes("what's the time right now") || command.includes("what the time")) {
       const now = new Date();
       const timeString = now.toLocaleTimeString(); 
